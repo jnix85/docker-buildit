@@ -5,6 +5,6 @@ RUN dnf makecache && \
     dnf install -y wget git zip unzip tar gzip bzip2 curl && \
     dnf upgrade -y && \
     dnf clean all && \
-    mkdir -p /opt/openjdk/17 && \
+    mkdir -p /opt/openjdk && \
     chmod +x /install_jdk.sh && \
     sh /install_jdk.sh
